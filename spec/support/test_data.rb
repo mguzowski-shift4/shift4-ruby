@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class TestData # rubocop:disable Metrics/ClassLength
+class TestData
   def self.card
     {
       'number' => '4242424242424242',
@@ -68,21 +68,6 @@ class TestData # rubocop:disable Metrics/ClassLength
     {
       'email' => email,
       'card' => card,
-    }.compact
-  end
-
-  def self.cross_sale_offer_with_charge
-    {
-      'charge' => {
-        'amount' => 1000,
-        'currency' => 'EUR',
-      },
-      'title' => 'Test Title',
-      'description' => 'Test Description',
-      'termsAndConditionsUrl' => 'https://github.com/shift4developer',
-      'template' => 'text_only',
-      'companyName' => 'Shift4 Tests',
-      'companyLocation' => 'CH',
     }.compact
   end
 
